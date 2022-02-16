@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px 0;
+  align-items: center;
+}
+.oldLink {
+  color: grey;
+}
+.shortLink {
+  padding: 8px 20px;
+  border-radius: 15px;
+  padding-top: 10px;
+}
+.button {
+  font-size: 20px;
+  padding: 0 25px;
+  height: 45px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 783px) {
+  .container {
+    flex-direction: column;
+  }
+  .button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

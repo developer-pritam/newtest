@@ -1,0 +1,80 @@
+.container {
+  margin-bottom: 30px;
+}
+
+.accordion {
+  margin: 10px 15vw;
+  width: 70vw;
+  /* border: 2px solid #aaa; */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.toggler {
+  width: 100%;
+  margin: 0;
+  padding: 10px 30px;
+  padding-top: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  border-bottom: 2px solid #aaa;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail {
+  width: 100%;
+  padding: 5px 30px 15px 30px;
+  display: none;
+  transition: all 0.9s ease-in;
+  text-align: justify;
+}
+.icon {
+  transition: all 0.4s;
+}
+
+.section1:checked ~ .section1Detail {
+  display: block;
+}
+
+.section1:checked ~ label .icon1 {
+  transform: rotate(45deg);
+}
+
+.section2:checked ~ .section2Detail {
+  display: block;
+}
+
+.section2:checked ~ label .icon2 {
+  transform: rotate(45deg);
+}
+
+.section3:checked ~ .section3Detail {
+  display: block;
+}
+
+.section3:checked ~ label .icon3 {
+  transform: rotate(45deg);
+}
+
+.section4:checked ~ .section4Detail {
+  display: block;
+}
+
+.section4:checked ~ label .icon4 {
+  transform: rotate(45deg);
+}
+
+label {
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    width: 95vw;
+    margin: 10px 2.5vw;
+  }
+}

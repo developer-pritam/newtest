@@ -1,0 +1,26 @@
+.container {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95vw;
+  margin: 20px 2.5vw;
+  padding: 20px 30px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button {
+  padding: 12px 30px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+@media (max-width: 783px) {
+  h1 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0px 0;
+}
+.button {
+  font-size: 20px;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 783px) {
+  .container {
+    flex-direction: column;
+  }
+  .button {
+    width: 100%;
+    /* padding: 13px; */
+  }
+}
